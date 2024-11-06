@@ -1,11 +1,11 @@
 # Use Maven image for building the application
 FROM maven:3.8.4-openjdk-17 AS build
 
-# Set the working directory to where the POM file is located
+# Set the working directory to the root of your application
 WORKDIR /app
 
-# Copy the necessary files into the container
-COPY WEareAPP/app /app
+# Copy the contents of WEareAPP into the working directory
+COPY WEareAPP /app
 
 # Build the project using Maven
 RUN mvn clean install
