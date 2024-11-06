@@ -23,7 +23,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.community.weare.WeareApplication</mainClass>
+                <mainClass>com.community.weare.WeareApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>
