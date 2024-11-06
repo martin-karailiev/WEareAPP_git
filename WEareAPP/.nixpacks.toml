@@ -1,0 +1,6 @@
+[phases]
+  build = "mvn clean install -f app/pom.xml"
+  start = "java -jar app/target/weareapp.jar"
+
+[entrypoint]
+  command = "java -jar app/target/weareapp.jar"
